@@ -1,0 +1,27 @@
+body {
+    font-family: Brush Script MT;
+}
+header {
+    text-align: center;
+    font-family: Brush Script MT;
+}
+h2 {
+    text-align: center;
+}
+img {
+    width:300px;
+}
+header>h3 {
+    margin: auto;
+    width: 90%;
+    background-color:rgb(235, 240, 241);
+    padding:20px;
+ }
+ article{
+    margin: auto;
+    width: 90%;
+ }
+ ul {
+    display: table;
+    margin: 0 auto;
+}

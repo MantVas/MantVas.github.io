@@ -1,0 +1,10 @@
+header+nav>ul>li*5^^main>article^^aside>ul>li*3^^footer
+
+ul>li.child$*5
+ol#parent>li*10
+table>(tr>td*5)*4
+form[action=""][method="POST"]>label[type="password"]+button[type="submit"]
+
+ol#parent>li*10
+
+button[type="submit"].btn.btn-primary 
