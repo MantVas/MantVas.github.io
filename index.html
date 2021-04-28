@@ -5,19 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        ul {
+
+        *zoom:1;
+        list-style:none;
+        margin:0;
+        padding:0;
+        background:rgb(133, 127, 127);
+        }
+        ul:before,.nav ul:after {
+            content:"";
+            display:table;
+        }
+        ul:after {
+            clear:both;
+        }
+        ul > li {
+            float:left;
+            position:relative;
+        }
+        a {
+            margin-left:2px;
+            display:block;
+            padding:10px 15px;
+            line-height:1.2em;
+            color:rgb(32, 211, 0);
+            background-color: rgb(106, 87, 172);
+            border-radius: 10% 25%;
+ 
+        }
+        a:hover {
+            text-decoration:none;
+            background:#595959;
+ 
+        }
+        li ul {
+            background:#ffffff;
+            position:absolute;
+            left:0;
+            top:36px;
+            z-index:1;
+            max-height:0;
+            overflow:hidden;
+            -webkit-transform:perspective(400) rotate3d(1,0,0,-90deg);
+            -webkit-transform-origin:50% 0;
+            -webkit-transition:350ms;
+            -moz-transition:350ms;
+            -o-transition:350ms;
+            transition:350ms;
+        }
+        li ul li {
+            width:200px;
+            padding:2px 20px;
+        }
+        ul > li:hover ul li {
+            height:36px;
+        }
+
+        li ul a {
+            border:none;
+        }
+        li ul a:hover {
+            background:#595959;
+        }
+        
+        
+        
+        li ul {
+
+}
+ ul > li:hover ul {
+    max-height:1000px;
+    -webkit-transform:perspective(400) rotate3d(0,0,0,0);
+}
+
+    </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Menu</a>
+                <ul>
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About</a>
+                <ul>
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                    <li><a href="#">Subnav Item</a></li>
+                </ul>
+            </li>
+        </ul>
 
-    header+nav>ul>li*5^^main>article^^aside>ul>li*3^^footer
-
-ul>li.child$*5
-ol#parent>li*10
-table>(tr>td*5)*4
-form[action=""][method="POST"]>label[type="password"]+button[type="submit"]
-
-ol#parent>li*10
-
-button[type="submit"].btn.btn-primary 
-<button type="submit" class="btn btn-primary"></button>
+    </nav>
 </body>
 </html>
